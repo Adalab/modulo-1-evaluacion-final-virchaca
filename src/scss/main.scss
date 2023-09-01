@@ -1,19 +1,23 @@
 @import 'core/variables';
 @import 'core/reset';
 
+
 .header {
     background-color: $color-moss-green;
     width: 40px;
     position: fixed;
     padding: 10px;
+    
 }
 
 .main{
+    font-family: $Roboto-reg;
     .hero {
         background-image: url(../images/cover.jpeg);
         height: 100vh;
         background-position: -700px 0px;
         color: $color-white;
+    
 
         display: flex;
         flex-direction: column;
@@ -22,15 +26,18 @@
         padding-bottom: 80px;
         gap: 2rem;
         
-        h1 {
-            font-size: 3rem;
+        & h1 {
+            font-size: 2.5rem;
             text-transform: uppercase;
             text-align: center;
+            font-family: $Roboto-slab;
+                        
         }
-        p {
-            font-size: 2rem;
+        & p {
+            font-size: 1.4rem;
             text-align: center;
-            width: 70%;
+            width: 80%;
+            
         }
 
         @media all and (min-width: 1280px) {
@@ -39,13 +46,144 @@
             width: 100vw;*/
             
         } 
-      .scrolldown {
+        .scrolldown {
         background-color: $color-white;
         width: 40px;
         padding: 11px;
         border-radius: 50%;
         }
         }
+    .sport {
+        padding: 10% 10% 5% 10%;
+        line-height: 2;
+        .title1 {
+            color: $color-moss-green;
+            text-transform: uppercase;              
+        }
+        .title2 {
+            text-transform: uppercase;
+            font-family: $Roboto-slab;
+        }
+        .info {
+            color: color-greyish-brown;    
+        }
+        .buying {
+            border: 1px solid $color-moss-green;
+            border-radius: 25px;
+            width: 120px;
+            margin-top: 40px;
+        }
+        & a {
+            color: $color-moss-green;
+            padding: 25px;
+            text-decoration: none;
+        }
+        }
+    
+    .school {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        background-color: $color-light-grey;
+        grid-gap: 15px;  
+        .ready {
+            padding: 15px;
+        
+            .brand {
+            color: $color-greyish-brown;
+            font-size: 0.8rem;
+            text-align: center;      
+            }
+            .return {
+            text-transform: uppercase;
+            text-align: center;
+             }
+        } 
+        .children {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                  
+                img {
+                width: 40%;  
+                margin-bottom: 8px;  
+                } 
+                & img {
+                    border-radius: 50%;
+                    box-shadow: 5px 5px 5px grey;
+                    
+                } 
+                .img1 {
+                    width: 25%
+                }
+                & h4 {
+                    margin-bottom: 20px;
+                }
+        }
+         
+        }
+        .begin {
+            background-color: $color-moss-green;
+            border-radius: 25px;
+            width: 200px;
+            padding: 15px 10px;
+            }
+            & a {
+            color: $color-white;
+            padding: 25px;
+            text-decoration: none;
+            font-size: 18px;
+           }
+        }
 
+        .arrow {
+            background-color: $color-white;
+            width: 60px;
+            padding: 15px;
+            border-radius: 50%;
+            transform: translateY(50%);
+            & svg {
+                transform:translateX(-100%) ;
+            }
+        }
     }
 
+.footer {
+    background-color: $color-greyish-brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: $color-white;
+
+    .links, .sections { 
+        & ul {
+            list-style: none;
+            margin: 20px;
+            line-height: 2;
+            text-align: center;
+            
+            
+            & a {
+                color: $color-white;
+                text-decoration: none;
+    }
+}
+}
+.heart {
+    text-align: center;
+    line-height: 2;
+    & p::first-line {
+        word-spacing: 100vw;
+        
+    }
+
+    & span {
+        color: $color-moss-green;
+    }
+}
+}
