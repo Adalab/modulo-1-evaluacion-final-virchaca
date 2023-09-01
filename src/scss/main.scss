@@ -1,0 +1,51 @@
+@import 'core/variables';
+@import 'core/reset';
+
+.header {
+    background-color: $color-moss-green;
+    width: 40px;
+    position: fixed;
+    padding: 10px;
+}
+
+.main{
+    .hero {
+        background-image: url(../images/cover.jpeg);
+        height: 100vh;
+        background-position: -700px 0px;
+        color: $color-white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 80px;
+        gap: 2rem;
+        
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p {
+            font-size: 2rem;
+            text-align: center;
+            width: 70%;
+        }
+
+        @media all and (min-width: 1280px) {
+            background-position: 100%;
+           /* height: none;
+            width: 100vw;*/
+            
+        } 
+      .scrolldown {
+        background-color: $color-white;
+        width: 40px;
+        padding: 11px;
+        border-radius: 50%;
+        }
+        }
+
+    }
+
