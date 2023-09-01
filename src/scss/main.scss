@@ -30,7 +30,7 @@
             font-size: 2.5rem;
             text-transform: uppercase;
             text-align: center;
-            font-family: $Roboto-slab;
+            /*font-family: $Roboto-slab;*/
                         
         }
         & p {
@@ -58,11 +58,12 @@
         line-height: 2;
         .title1 {
             color: $color-moss-green;
-            text-transform: uppercase;              
+            text-transform: uppercase;     
+            font-family:$Roboto-reg;        
         }
         .title2 {
             text-transform: uppercase;
-            font-family: $Roboto-slab;
+            /*font-family: $Roboto-slab;*/
         }
         .info {
             color: color-greyish-brown;    
@@ -115,10 +116,8 @@
                 & img {
                     border-radius: 50%;
                     box-shadow: 5px 5px 5px grey;
-                    
-                } 
-                .img1 {
-                    width: 25%
+                    width: 120px;
+                                   
                 }
                 & h4 {
                     margin-bottom: 20px;
@@ -165,25 +164,21 @@
             list-style: none;
             margin: 20px;
             line-height: 2;
-            text-align: center;
-            
-            
+            text-align: center; 
             & a {
                 color: $color-white;
                 text-decoration: none;
+            }
+        }
     }
-}
-}
 .heart {
     text-align: center;
     line-height: 2;
     & p::first-line {
-        word-spacing: 100vw;
-        
+        word-spacing: 100vw;        
     }
-
     & span {
         color: $color-moss-green;
+        }
     }
-}
 }
