@@ -86,7 +86,6 @@
         grid-template-columns: 1fr;
         justify-items: center;
         background-color: $color-light-grey;
-        grid-gap: 15px;  
         .ready {
             padding: 15px;
         
@@ -101,12 +100,12 @@
              }
         } 
         .children {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr;       
+            justify-items: center;     
             .img {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 1fr;
                 align-items: center;
                   
                 img {
@@ -117,10 +116,10 @@
                     border-radius: 50%;
                     box-shadow: 5px 5px 5px grey;
                     width: 120px;
-                                   
                 }
                 & h4 {
                     margin-bottom: 20px;
+                    text-align: center;
                 }
         }
          
