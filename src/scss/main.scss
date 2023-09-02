@@ -26,25 +26,58 @@
         padding-bottom: 80px;
         gap: 2rem;
         
+        
         & h1 {
-            font-size: 2.5rem;
             text-transform: uppercase;
             text-align: center;
+            word-spacing: 100vw; 
             /*font-family: $Roboto-slab;*/
-                        
-        }
-        & p {
-            font-size: 1.4rem;
-            text-align: center;
-            width: 80%;
-            
+
+            @media all and (min-width: 320px) {
+                font-size: 30px;
+            }
+            @media all and (min-width: 768px) {
+                font-size: 75px;
+                line-height: 100px;
+                h1::fist-line  
+            }
+
+            @media all and (min-width: 1280px) {
+                font-size: 75px;
+            }         
         }
 
+        & p {
+            font-size: 16px;
+            text-align: center;
+            width: 80%;
+            @media all and (min-width: 320px) {
+                width: 60%;
+                font-size: 24px;
+            }
+            @media all and (min-width: 768px) {
+                width: 30%;
+                font-size: 24px;
+            }
+            @media all and (min-width: 1280px) {
+                width: 50%;
+            }            
+        }
+
+        @media all and (min-width: 320px) {
+            background-position: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media all and (min-width: 768px) {
+            background-position: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         @media all and (min-width: 1280px) {
             background-position: 100%;
-           /* height: none;
-            width: 100vw;*/
-            
+            background-size: cover;
+            background-repeat: no-repeat;
         } 
         .scrolldown {
         background-color: $color-white;
@@ -53,9 +86,20 @@
         border-radius: 50%;
         }
         }
+
     .sport {
         padding: 10% 10% 5% 10%;
         line-height: 2;
+        @media all and (min-width: 320px) {
+            padding: 25px 25px 50px 25px;
+        }
+        @media all and (min-width: 768px) {
+            padding: 25px 25px 50px 25px
+        }
+        @media all and (min-width: 1280px) {
+            padding: 3% 10% 5% 10%;
+        }
+        
         .title1 {
             color: $color-moss-green;
             text-transform: uppercase;     
@@ -86,8 +130,10 @@
         grid-template-columns: 1fr;
         justify-items: center;
         background-color: $color-light-grey;
+       
         .ready {
-            padding: 15px;
+            margin: 35px;
+            line-height: 1.8;
         
             .brand {
             color: $color-greyish-brown;
@@ -97,12 +143,34 @@
             .return {
             text-transform: uppercase;
             text-align: center;
+            @media all and (min-width: 320px) {
+                font-size: 28px
+            }
+            @media all and (min-width: 768px) {
+                font-size: 28px;
+            }
+            @media all and (min-width: 1280px) {
+                font-size: 28px;               
+            }
              }
         } 
         .children {
             display: grid;
             grid-template-columns: 1fr;       
-            justify-items: center;     
+            justify-items: center; 
+            @media all and (min-width: 320px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 12rem;
+            }
+            @media all and (min-width: 768px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 12rem;
+            }
+            @media all and (min-width: 1280px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20rem;
+            }
+                
             .img {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -111,15 +179,27 @@
                 img {
                 width: 40%;  
                 margin-bottom: 8px;  
+                
+                
                 } 
                 & img {
                     border-radius: 50%;
                     box-shadow: 5px 5px 5px grey;
                     width: 120px;
-                }
+               }
                 & h4 {
                     margin-bottom: 20px;
                     text-align: center;
+                    font-size: 14px;
+                    @media all and (min-width: 320px) {
+                        font-size: 18px
+                    }
+                    @media all and (min-width: 768px) {
+                        font-size: 18px;
+                    }
+                    @media all and (min-width: 1280px) {
+                        font-size: 18px;               
+                    }
                 }
         }
          
@@ -152,11 +232,22 @@
 
 .footer {
     background-color: $color-greyish-brown;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     padding: 30px;
     color: $color-white;
+
+    @media all and (min-width: 320px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'first' 'second' 'third';
+        align-items: start;
+        padding-left: 100px;
+    }
+    @media all and (min-width: 768px) {
+    }
+    @media all and (min-width: 1280px) {
+    }
 
     .links, .sections { 
         & ul {
@@ -168,16 +259,35 @@
                 color: $color-white;
                 text-decoration: none;
             }
+            @media all and (min-width: 320px) {
+                text-align: left;;
+            }
+            
+            @media all and (min-width: 768px) {
+            }
+            @media all and (min-width: 1280px) {
+            }
         }
     }
-.heart {
-    text-align: center;
-    line-height: 2;
-    & p::first-line {
-        word-spacing: 100vw;        
-    }
-    & span {
-        color: $color-moss-green;
+    .heart {
+        text-align: center;
+        line-height: 2;
+        & p::first-line {
+            word-spacing: 100vw;        
+        }
+        & span {
+            color: $color-moss-green;
+            }
+        @media all and (min-width: 320px) {
+            grid-area: first;
+            margin: 20px;   
+            margin-left: 8vw;     
+            text-align: left;            
+        }
+            
+        @media all and (min-width: 768px) {
+        }
+        @media all and (min-width: 1280px) {
         }
     }
 }
