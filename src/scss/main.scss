@@ -118,6 +118,7 @@
             width: 120px;
             margin-top: 40px;
         }
+       
         & a {
             color: $color-moss-green;
             padding: 25px;
@@ -154,6 +155,7 @@
             }
              }
         } 
+    }
         .children {
             display: grid;
             grid-template-columns: 1fr;       
@@ -178,9 +180,7 @@
                   
                 img {
                 width: 40%;  
-                margin-bottom: 8px;  
-                
-                
+                margin-bottom: 8px;   
                 } 
                 & img {
                     border-radius: 50%;
@@ -201,7 +201,7 @@
                         font-size: 18px;               
                     }
                 }
-        }
+            }
          
         }
         .begin {
@@ -209,13 +209,19 @@
             border-radius: 25px;
             width: 200px;
             padding: 15px 10px;
-            }
-            & a {
+                     
+            .beginButton {
             color: $color-white;
             padding: 25px;
             text-decoration: none;
-            font-size: 18px;
-           }
+            font-size: 18px; 
+            }
+            .beginButton:hover {
+                
+                background-color: rebeccapurple;
+                transform: translate(30px);
+            }
+      
         }
 
         .arrow {
@@ -225,7 +231,7 @@
             border-radius: 50%;
             transform: translateY(50%);
             & svg {
-                transform:translateX(-100%) ;
+                transform:translateX(20%);                
             }
         }
     }
@@ -241,13 +247,22 @@
     @media all and (min-width: 320px) {
         flex-direction: row;
         align-items: start;
-        padding-left: 100px;
-    }
+        gap: 6rem;
+        justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 5rem;
+
     @media all and (min-width: 768px) {
+        padding-left: 8rem;
+        padding-right: 10rem;
     }
     @media all and (min-width: 1280px) {
+        padding-left: 8rem;
+        padding-right: 10rem;               
     }
 
+        
+    }
     .links, .sections { 
         & ul {
             list-style: none;
@@ -259,34 +274,31 @@
                 text-decoration: none;
             }
             @media all and (min-width: 320px) {
-                text-align: left;;
-            }
-            
-            @media all and (min-width: 768px) {
-            }
-            @media all and (min-width: 1280px) {
+                text-align: left;
             }
         }
     }
-    .heart {
+        .sections {
+            @media all and (min-width: 320px) {
+            order: 1;
+            }
+
+        }.links {
+            @media all and (min-width: 320px) {
+            order: 2;
+            }
+        }
+        .heart {
         text-align: center;
         line-height: 2;
-        & p::first-line {
-            word-spacing: 100vw;        
-        }
-        & span {
+        margin: 20px;
+
+            & span {
             color: $color-moss-green;
             }
         @media all and (min-width: 320px) {
-            order: 1;
-            margin: 20px;   
-            margin-left: 8vw;     
-            text-align: left;            
-        }
-            
-        @media all and (min-width: 768px) {
-        }
-        @media all and (min-width: 1280px) {
+            order: 0;                
+            text-align: left;           
         }
     }
 }
