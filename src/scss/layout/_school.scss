@@ -1,0 +1,115 @@
+.school {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: $color-light-grey;
+   
+    .ready {
+        margin: 35px;
+        line-height: 1.5;
+          
+        .brand {
+        color: $color-greyish-brown;
+        font-size: 12px;
+        text-align: center; 
+        /*font-family: $Roboto-slab*/;  
+        }
+        .return {
+        text-transform: uppercase;
+        text-align: center;
+         /*font-family: $Roboto-slab*/;  
+         font-size: 20px;
+            @media all and (min-width: 320px) {
+                font-size: 28px
+            }
+            @media all and (min-width: 768px) {
+                font-size: 28px;
+            }
+            @media all and (min-width: 1280px) {
+                font-size: 28px;               
+            }
+        }
+    } 
+
+.children {
+        display: grid;
+        grid-template-columns: 1fr;       
+        justify-items: center; 
+        @media all and (min-width: 320px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 12rem;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        @media all and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 12rem;
+            justify-content: space-around;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        @media all and (min-width: 1280px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20rem;
+        }
+            
+        .img {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+              
+            .imgChild {
+                width: 40%;  
+                margin-bottom: 8px; 
+                border-radius: 50%;
+                box-shadow: 5px 5px 5px grey;
+                width: 120px;
+           }
+            .titleChild {
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 14px;
+                /*font-family: $Roboto-slab*/;
+                @media all and (min-width: 320px) {
+                    font-size: 18px
+                }
+                @media all and (min-width: 768px) {
+                    font-size: 18px;
+                }
+                @media all and (min-width: 1280px) {
+                    font-size: 18px;               
+                }
+            }
+        }
+    }
+.begin {
+    background-color: $color-moss-green;
+    border-radius: 25px;
+    width: 170px;
+    padding: 15px 10px;
+                    
+    .beginButton {
+        color: $color-white;
+        padding: 25px;
+        text-decoration: none;
+        font-size: 14px; 
+        font-family: $Roboto-reg;
+        }
+
+    .beginButton:hover {            
+        background-color: rebeccapurple;
+        transform: translate(30px);
+        }
+    }
+
+.arrow {
+    background-color: $color-white;
+    width: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    transform: translateY(50%);
+    .arroIcon {
+        transform:translateX(20%);                
+        }
+    }
+}
