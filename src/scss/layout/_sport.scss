@@ -3,11 +3,11 @@
     line-height: 1.5;
   
     @media all and (min-width: 768px) {
-        padding: 25px 25px 50px 25px;
+        padding: 5% 5% 5% 5%;
         line-height: 1.5;
     }
     @media all and (min-width: 1280px) {
-        padding: 3% 10% 5% 10%;
+        padding: 3% 10% 5% 5%;
         line-height: 2;
     }
     
@@ -20,10 +20,6 @@
         @media all and (min-width: 768px) {
             font-size: 16px;
         }
-        /*
-        @media all and (min-width: 1280px) {
-            font-size: 16px;
-        }  */
     }
 
     .title2 {
@@ -34,11 +30,7 @@
 
         @media all and (min-width: 768px) {
             font-size: 32px;
-        }
-        /*
-        @media all and (min-width: 1280px) {
-            font-size: 32px;
-        }  */
+        }        
     }
 
     .info {
@@ -49,21 +41,30 @@
         @media all and (min-width: 768px) {
             font-size: 20px;
         }
-
-        /*
-        @media all and (min-width: 1280px) {
-            font-size: 20px;
-        }  */
     }
 
     .buying {
+        .button1 {
         border: 2px solid $color-moss-green;
+        background-color: $color-white;
         border-radius: 25px;
         width: 150px;
         margin-top: 40px;
         padding-top: 5px;
         padding-bottom: 5px;
-    
+
+        transition:
+        width 2s,
+        height 2s,
+        background-color 2s,
+        rotate 2s;
+        }
+        .button1:hover {
+            background-color: $color-moss-green;
+            width: 150px;
+            height: 150px;
+            rotate: 180deg;
+        }
         .buyingLink {
             color: $color-moss-green;
             padding: 35px;

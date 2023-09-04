@@ -24,10 +24,7 @@
           
             @media all and (min-width: 768px) {
                 font-size: 28px;
-            }
-           /* @media all and (min-width: 1280px) {
-                font-size: 28px;               
-            }*/
+            }           
         }
     } 
 
@@ -36,13 +33,6 @@
         grid-template-columns: 1fr;       
         justify-items: center; 
         
-        /*@media all and (min-width: 320px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 12rem;
-            padding-left: 100px;
-            padding-right: 100px;
-        }*/
-
         @media all and (min-width: 768px) {
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 12rem;
@@ -73,38 +63,31 @@
                 font-size: 14px;
                 font-family: $Roboto-slab;
                 font-weight: bold;
-                /*
-                @media all and (min-width: 320px) {
-                    font-size: 18px
-                }*/
                 
                 @media all and (min-width: 768px) {
                     font-size: 18px;
-                }
-                
-                /*@media all and (min-width: 1280px) {
-                    font-size: 18px;               
-                }*/
+                }               
             }
         }
     }
     .begin {
-    background-color: $color-moss-green;
-    border-radius: 25px;
-    width: 210px;
-    padding: 15px 10px;
-                    
-    .beginButton {
-        color: $color-white;
-        padding: 25px;
-        text-decoration: none;
-        font-size: 20px; 
-        font-family: $Roboto-reg;
+        .button2 {
+        background-color: $color-moss-green;
+        border-radius: 25px ;
+        width: 210px;
+        padding: 10px 10px; 
+        border: 1px solid $color-moss-green;                 
         }
-
-    .beginButton:hover {            
-        background-color: rebeccapurple;
-        transform: translate(30px);
+        .button2:hover {
+                transform: rotate(45deg);
+                background-color: black;
+        }
+        .beginButton {
+            color: $color-white;
+            padding: 25px;
+            text-decoration: none;
+            font-size: 20px; 
+            font-family: $Roboto-reg;
         }
     }
 
