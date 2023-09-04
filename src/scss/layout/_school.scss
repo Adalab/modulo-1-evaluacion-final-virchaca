@@ -97,8 +97,23 @@
     padding: 15px;
     border-radius: 50%;
     transform: translateY(50%);
+    animation-name: back;
+        animation-duration: 3s;
     .arroIcon {
         transform:translateX(20%);                
         }
+    @keyframes back {
+        0% {background: green;}
+        10% {background: white;}
+        20% {background: black;}
+        30% {background: green;}
+        40% {background: white;}
+        50% {background: black;}
+        60% {background: green;}
+        70% {background: white;}
+        80% {background: black;}
+        90% {background: green;}
+        100% {background: white;}   
+    }
     }
 }
