@@ -76,7 +76,7 @@ Despues de dar formato y estilo al proyecto, lo he publicado en GitHub Pages, me
 npm run deploy
 ```
 
-GitHub Pages un servicio de alojamiento de sitio estático que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente ejecuta los archivos a través de un proceso de complilación y publica un sitio web. De manera esta manera las profesoras tengan acceso a mi proyecto para poder evaluarlo.
+GitHub Pages es un servicio de alojamiento de sitio estático que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente ejecuta los archivos a través de un proceso de complilación y publica un sitio web. De esta manera las profesoras tendrán acceso a mi proyecto para poder evaluarlo.
 
 Os dejo aqui el enlace a la pagina para que podais echarle un vistazo!
 
