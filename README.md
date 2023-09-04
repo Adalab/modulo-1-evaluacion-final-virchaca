@@ -31,6 +31,7 @@ npm start
 A la hora de estructurar el proyecto, dentro de mis archivos  _HTML_ y _SCSS_ he creado los siguientes parciales:
 
 ## Parciales en HTML ( en la carpeta La carpeta `src/` --> `html/` --> `partials/`):
+
 - Header
 - Main:
   · section.hero
