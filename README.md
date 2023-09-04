@@ -1,6 +1,4 @@
 
-![Ejercicio Evaluacion Final] (http://beta.adalab.es/modulo-1-evaluacion-final-virchaca/)
-
 # Ejercicio Modulo I - _Virginia Alvarez Perez_
 
 Ahoy! Este es nuestro primer proyecto individual dentro del BootCamp de desarrolladoras web que estamos realizando en **Adalab**. 
@@ -63,3 +61,6 @@ npm run deploy
 ```
 
 GitHub Pages un servicio de alojamiento de sitio estático que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente ejecuta los archivos a través de un proceso de complilación y publica un sitio web. De manera esta manera las profesaoras tengan acceso a mi proyecto para poder evaluarlo.
+
+Os dejo aqui abajo el enñlace a la pagina para que podais echarle un vistazo!
+[Ejercicio Evaluacion Final] (http://beta.adalab.es/modulo-1-evaluacion-final-virchaca/)
