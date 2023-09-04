@@ -29,7 +29,7 @@ npm start
 
 En la parte de HTML he estructurado el proyecto, dividiendo el body en diferentes partes, 3 principales, **header**, **main** y **footer**. Dentro de main, las más extensa, he hecho varias secciones, _hero_, con la imagen de fondo y los titulos principales; _sport_, donde se hace una breve introducción de la tienda donde adquirir productos para los estudiantes; y por último _school_, donde se ven unas imagenes de estudiantes con algunas opciones de productos.
 En cada apartado he incluido unos botones de compra (comprar y empezar ahora) para facilitar al usuario el trámite de comprar los productos. Y unos botones _scroll_ para acceder diretamente desde el principio de la pagina al final, y desde el final, al principio.
-En el footer he hecho varias secciones con listas de links e iconos que redireccionan al usuario a sus correspondientes paginas web, y por ultimo, he incluido el copyright y eslogan de " we love run", con un pequeño corazon verde representando la palabra _love_.
+En el footer he hecho varias secciones con listas de links e iconos que redireccionan al usuario a sus correspondientes paginas web, y por último, he incluido el copyright y eslogan de " we love run", con un pequeño corazon verde representando la palabra _love_.
 
 A la hora de estructurar el proyecto, dentro de mis archivos  _HTML_ y _SCSS_ he creado los siguientes parciales:
 
@@ -60,12 +60,14 @@ A la hora de estructurar el proyecto, dentro de mis archivos  _HTML_ y _SCSS_ he
 
 Y he vinculado todos los parciales con sus correspondientes etiquetas, para el correcto funcionamiento de la página web:
  * En HTML:
-   ```bash
+   
+```bash
 <include src="**url del partial correspondiente**"></include>
 ```
  * En SCSS:
+
 ```bash
-@import '**url del partial correspondiente**';
+@import '**url del partial correspondiente**'
 ```
 
 Despues de dar formato y estilo al proyecto, lo he publicado en GitHub Pages, mediante el comando:
