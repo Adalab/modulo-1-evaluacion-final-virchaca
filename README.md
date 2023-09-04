@@ -1,8 +1,8 @@
-![Ejercicio Evaluacion Final](http://beta.adalab.es/modulo-1-evaluacion-final-virchaca/)
+[Ejercicio Evaluacion Final] (http://beta.adalab.es/modulo-1-evaluacion-final-virchaca/)
 
-# Ejercicio Modulo I - _Virginia_
+# Ejercicio Modulo I - _Virginia Alvarez Perez_
 
-Ahoy! Este es nuestro primer proyecto individual dentro del Boot Cap de desarrolladoras web que estamos realizando en **Adalab**. 
+Ahoy! Este es nuestro primer proyecto individual dentro del BootCamp de desarrolladoras web que estamos realizando en **Adalab**. 
 
 El proyecto consiste en crear una página web de _vuelta al cole_ en los tres formatos más habituales:
 
@@ -34,10 +34,10 @@ A la hora de estructurar el proyecto, dentro de mis archivos  _HTML_ y _SCSS_ he
 
 - Header
 - Main:
-  · section.hero
-  · section-sport
-  · section school
-     + articleChildren
+  + section.hero
+  + section-sport
+  + section school
+     - articleChildren
 - footer
 
 ## Parciales en SASS ( en la carpeta La carpeta `src/` --> `scss/`):
@@ -57,9 +57,8 @@ A la hora de estructurar el proyecto, dentro de mis archivos  _HTML_ y _SCSS_ he
 
 Despues de dar formato y estilo al proyecto, lo he publicado en GitHub Pages, mediante el comando:
 
-un servicio de alojamiento de sitio estático que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente ejecuta los archivos a través de un proceso de complilación y publica un sitio web.
-
 ```bash
 npm run deploy
 ```
-De manera que  las profesaoras tengan acceso al mismo para poder evaluarlo.
+
+GitHub Pages un servicio de alojamiento de sitio estático que toma archivos HTML, CSS y JavaScript directamente desde un repositorio en GitHub, opcionalmente ejecuta los archivos a través de un proceso de complilación y publica un sitio web. De manera esta manera las profesaoras tengan acceso a mi proyecto para poder evaluarlo.
