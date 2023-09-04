@@ -12,29 +12,30 @@
         color: $color-greyish-brown;
         font-size: 12px;
         text-align: center; 
-        /*font-family: $Roboto-slab*/;  
+        font-family: $Roboto-slab;
         }
         .return {
         text-transform: uppercase;
         text-align: center;
-         /*font-family: $Roboto-slab*/;  
+        font-family: $Roboto-slab; 
          font-size: 20px;
             @media all and (min-width: 320px) {
                 font-size: 28px
             }
-            @media all and (min-width: 768px) {
+            /*@media all and (min-width: 768px) {
                 font-size: 28px;
             }
             @media all and (min-width: 1280px) {
                 font-size: 28px;               
-            }
+            }*/
         }
     } 
 
-.children {
+    .children {
         display: grid;
         grid-template-columns: 1fr;       
         justify-items: center; 
+        
         @media all and (min-width: 320px) {
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 12rem;
@@ -69,30 +70,31 @@
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 14px;
-                /*font-family: $Roboto-slab*/;
+                font-family: $Roboto-slab;
                 @media all and (min-width: 320px) {
                     font-size: 18px
                 }
+                /*
                 @media all and (min-width: 768px) {
                     font-size: 18px;
                 }
                 @media all and (min-width: 1280px) {
                     font-size: 18px;               
-                }
+                }*/
             }
         }
     }
-.begin {
+    .begin {
     background-color: $color-moss-green;
     border-radius: 25px;
-    width: 170px;
+    width: 210px;
     padding: 15px 10px;
                     
     .beginButton {
         color: $color-white;
         padding: 25px;
         text-decoration: none;
-        font-size: 14px; 
+        font-size: 20px; 
         font-family: $Roboto-reg;
         }
 
@@ -102,7 +104,7 @@
         }
     }
 
-.arrow {
+    .arrow {
     background-color: $color-white;
     width: 60px;
     padding: 15px;
